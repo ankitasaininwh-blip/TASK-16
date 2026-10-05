@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 30px auto;
+}
+
+h1 {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.search-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+}
+
+.search-box button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    background-color: #7b00c9;
+    color: white;
+    cursor: pointer;
+}
+
+.search-box button:hover {
+    background-color: #6500a8;
+}
+
+.student-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.student-card {
+    background-color: #f7f7f7;
+    padding: 18px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.student-card p {
+    margin: 8px 0;
+    font-size: 14px;
+}
+
+.student-card strong {
+    color: #333;
+}
+
+@media (max-width: 768px) {
+    .student-container {
+        grid-template-columns: 1fr;
+    }
+
+    .container {
+        width: 90%;
+    }
+}
